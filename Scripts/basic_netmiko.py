@@ -1,5 +1,6 @@
 from netmiko import ConnectHandler
 
+
 cisco_username = input("Enter Username: ")
 cisco_password = input("Enter Password: ")
 
@@ -24,14 +25,10 @@ R3 = {
     'password': cisco_password,
 }
 
-
 my_routers = [R1, R2, R3]
-
 
 for router in my_routers:
     net_connect = ConnectHandler(**router)
     output = net_connect.send_config_from_file("cisco_commands.txt")
     print("!#****************************\n")
     print(output)
-
-
