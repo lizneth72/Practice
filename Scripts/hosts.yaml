@@ -2,18 +2,18 @@ R1:
     'hostname': '192.168.177.101'
     'port': 22
     'username': "cisco"
-    'password': "cisc0"
+    'password': "cisco"
     'platform': 'cisco_ios'
 R2:
     'hostname': '192.168.177.102'
     'port': 22
     'username': "cisco"
-    'password': "cisc0"
+    'password': "cisco"
     'platform': 'cisco_ios'
 
 R3:
     'hostname': '192.168.177.103'
     'port': 22
     'username': "cisco"
-    'password': "cisc0"
+    'password': "cisco"
     'platform': 'cisco_ios'
