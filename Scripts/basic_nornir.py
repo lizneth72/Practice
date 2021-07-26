@@ -3,6 +3,7 @@ from nornir_netmiko import netmiko_send_command
 from nornir_netmiko import netmiko_send_config
 from nornir_utils.plugins.functions import print_result
 
+
 # Example 1: Sending commands.
 nr = InitNornir()
 result = nr.run(task=netmiko_send_command,
@@ -23,4 +24,3 @@ nr = InitNornir()
 result = nr.run(task=netmiko_send_config,
                 config_file="cisco_commands.txt")
 print_result(result)
-
