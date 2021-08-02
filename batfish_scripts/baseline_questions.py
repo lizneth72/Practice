@@ -1,4 +1,4 @@
-from pybatfish.client.commands import bf_init_snapshot, bf_session
+from pybatfish.client.commands import bf_init_snapshot, bf_session, bf_set_network
 from pybatfish.question.question import load_questions
 from pybatfish.question import bfq
 
@@ -16,8 +16,10 @@ output_topology = "snapshot\\output\\topology"
 
 if __name__ == "__main__":
     bf_session.host = bf_address
-
-    bf_init_snapshot(snapshot_path, overwrite=True)
+    network_name = input("Provide a network name: ")
+    snapshot_name = input("Provide a snapshot name: ")
+    bf_set_network(network_name)
+    bf_init_snapshot(snapshot_path, name=snapshot_name, overwrite=True)
     load_questions()
 
     """
