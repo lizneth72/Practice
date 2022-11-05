@@ -1,6 +1,0 @@
-R3:
-    'hostname': '192.168.150.103'
-    'port': 22
-    'username': "cisco"
-    'password': "cisco"
-    'platform': 'cisco_ios'

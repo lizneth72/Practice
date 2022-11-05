@@ -1,0 +1,13 @@
+---
+global:
+    data:
+        domain: test.test
+
+site1:
+    data:
+        or_asn: 616
+        ir_asn: 65001
+
+site2:
+    data:
+        or_asn: 616
